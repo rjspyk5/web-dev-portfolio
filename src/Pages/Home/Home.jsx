@@ -7,12 +7,18 @@ export const Home = () => {
   return (
     <div>
       <Banner />
-      <SectionHeading heading="Skills" id="#skills" />
-      <SkillSection />
-      <SectionHeading heading="Projects" id="#projects" />
-      <ProjectSection />
-      <SectionHeading heading="Contact Info" id="#contact" />
-      <Contact />
+      <div id="#skills">
+        <SectionHeading heading="Skills" />
+        <SkillSection />
+      </div>
+      <div id="#projects">
+        <SectionHeading heading="Projects" />
+        <ProjectSection />
+      </div>
+      <div id="#contact">
+        <SectionHeading heading="Contact Info" />
+        <Contact />
+      </div>
     </div>
   );
 };
