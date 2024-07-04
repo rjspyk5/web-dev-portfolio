@@ -24,7 +24,7 @@ export const Navbar = () => {
         {" "}
         <Link
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#skills"
+          to="#skill"
         >
           Skill
         </Link>
@@ -33,7 +33,7 @@ export const Navbar = () => {
         {" "}
         <Link
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#projects"
+          to="#project"
         >
           Project
         </Link>
@@ -57,8 +57,8 @@ export const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100">
+    <div className="sticky top-0 z-20 bg-[#31313117] backdrop-blur-md">
+      <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -84,15 +84,15 @@ export const Navbar = () => {
               {menu}
             </ul>
           </div>
-          <NavLink className="btn btn-ghost text-xl" to="/">
-            Rakibul
-          </NavLink>
+          <NavLink to="/">Rakibul</NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="rounded-md bg-lime-500 font-semibold text-white px-3 py-2 ">
+            Hire me
+          </button>
         </div>
       </div>
     </div>

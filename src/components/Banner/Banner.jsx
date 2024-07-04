@@ -1,7 +1,7 @@
 import profile from "../../assets/profile1.jpg";
 export const Banner = () => {
   return (
-    <div className="flex shadow-2xl flex-col md:flex-row justify-between p-10 my-5">
+    <div className="flex shadow-xl rounded-md flex-col md:flex-row justify-between p-10 my-5">
       <div className="md:w-2/5 flex justify-center items-center">
         <img className="max-h-96" src={profile} alt="" />
       </div>
@@ -16,7 +16,6 @@ export const Banner = () => {
         </p>
         <div className="flex gap-4">
           <button className="btn">Download Cv</button>
-          <button className="btn">Hire Me</button>
         </div>
       </div>
     </div>
