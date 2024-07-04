@@ -21,7 +21,6 @@ export const Contact = () => {
               logo={<BsTelephone size={36} />}
               contactDetails={["+8801684883865"]}
             />
-
             <ContactDetailsIteam
               text="Location"
               logo={<SlLocationPin size={36} />}
