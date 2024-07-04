@@ -1,11 +1,58 @@
+import { Link, NavLink } from "react-router-dom";
+
 export const Navbar = () => {
   const menu = (
     <>
       <li>
-        <a>Item 1</a>
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="/"
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <a>Item 1</a>
+        {" "}
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="#about"
+        >
+          About
+        </Link>
+      </li>
+      <li>
+        {" "}
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="#skills"
+        >
+          Skill
+        </Link>
+      </li>
+      <li>
+        {" "}
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="#projects"
+        >
+          Project
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="#contact"
+        >
+          Contact
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+          to="#blog"
+        >
+          Blog
+        </Link>
       </li>
     </>
   );
@@ -37,7 +84,9 @@ export const Navbar = () => {
               {menu}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <NavLink className="btn btn-ghost text-xl" to="/">
+            Rakibul
+          </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
