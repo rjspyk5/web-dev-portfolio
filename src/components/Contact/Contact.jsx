@@ -1,12 +1,52 @@
-import React from "react";
+import { ContactDetailsIteam } from "./ContactDetailsIteam";
+import { BsEnvelope, BsTelephone } from "react-icons/bs";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { SlLocationPin } from "react-icons/sl";
 
 export const Contact = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12">
-      <div className=" md:col-span-5"></div>
-      <div className=" md:col-span-7 p-6 rounded-lg">
+    <div className="grid grid-cols-1 gap-16 md:gap-8 md:grid-cols-12">
+      <div className=" md:col-span-4">
+        <p className="mb-10 font-semibold text-xl ">Contact info</p>
+        <div>
+          <div className="space-y-14">
+            <ContactDetailsIteam
+              text="Email"
+              logo={<BsEnvelope size={36} />}
+              contactDetails={["imrakibul9@gmail.com"]}
+            />
+            <ContactDetailsIteam
+              text="Mobile"
+              logo={<BsTelephone size={36} />}
+              contactDetails={["+8801684883865"]}
+            />
+
+            <ContactDetailsIteam
+              text="Location"
+              logo={<SlLocationPin size={36} />}
+              contactDetails={["mail", "mail"]}
+            />
+          </div>
+
+          <p className="mt-14 mb-6 font-semibold text-xl ">Social info</p>
+          <div className="flex  gap-5">
+            <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
+              <FaLinkedin size={36} />
+            </div>
+            <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
+              <FaSquareGithub size={36} />
+            </div>
+            <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
+              <FaFacebookSquare size={36} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className=" md:col-span-8  rounded-lg">
         <div className="card bg-base-100 w-full shrink-0 shadow-2xl">
           <form className="card-body">
+            <h1 className="text-4xl font-bold">Let’s work together.</h1>
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -42,7 +82,7 @@ export const Contact = () => {
 
               <textarea
                 placeholder="Your Message"
-                className="textarea textarea-bordered textarea-lg w-full"
+                className="textarea textarea-bordered textarea-lg  w-full"
               ></textarea>
             </div>
 
