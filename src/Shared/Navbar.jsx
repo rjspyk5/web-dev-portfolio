@@ -56,7 +56,7 @@ export const Navbar = () => {
     </>
   );
   return (
-    <div className="sticky top-0 z-20 backdrop-blur-md">
+    <div className="sticky top-0 z-20 backdrop-blur-md md:px-[10%] px-[5%]">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -83,7 +83,9 @@ export const Navbar = () => {
               {menu}
             </ul>
           </div>
-          <NavLink to="/">Rakibul</NavLink>
+          <NavLink className="text-xl font-bold" to="/">
+            Rakibul
+          </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
