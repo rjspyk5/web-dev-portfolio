@@ -15,7 +15,11 @@ export const Banner = () => {
           carefully crafted code and user-centric design.
         </p>
         <div className="flex gap-4">
-          <button className="btn">Download Cv</button>
+          <button className="btn">
+            <a href="/Rakibul.pdf" download="Rakibul.pdf">
+              Download CV
+            </a>
+          </button>
         </div>
       </div>
     </div>
