@@ -1,6 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export const ProjectCard = ({ img, name, descreption }) => {
+export const ProjectCard = ({
+  img,
+  name,
+  descreption,
+  link,
+  server,
+  client,
+}) => {
   return (
     <div>
       <div className="card card-compact bg-base-100  shadow-xl">
@@ -10,11 +18,29 @@ export const ProjectCard = ({ img, name, descreption }) => {
         <div className="card-body">
           <h1 className="font-bold text-xl">{name}</h1>
           <p>{descreption}</p>
-        </div>
-        <div className="flex gap-3">
-          <button className="btn">Live</button>
-          <button className="btn">Client code</button>
-          <button className="btn">Server Code</button>
+          <div className="flex gap-3">
+            <Link
+              className="btn bg-green-500 text-white"
+              to={link}
+              target="_blank"
+            >
+              Live
+            </Link>
+            <Link
+              className="btn bg-green-500 text-white"
+              to={client}
+              target="_blank"
+            >
+              Client
+            </Link>
+            <Link
+              className="btn bg-green-500 text-white"
+              to={server}
+              target="_blank"
+            >
+              Server
+            </Link>
+          </div>
         </div>
       </div>
     </div>
