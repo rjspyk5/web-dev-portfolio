@@ -31,13 +31,20 @@ export const Contact = () => {
           <p className="mt-14 mb-6 font-semibold text-xl ">Social info</p>
           <div className="flex  gap-5">
             <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
-              <FaLinkedin size={36} />
+              <a href="https://www.linkedin.com/in/rakibulweb/" target="_blank">
+                <FaLinkedin size={36} />
+              </a>
             </div>
             <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
-              <FaSquareGithub size={36} />
+              <a href="https://github.com/rjspyk5" target="_blank">
+                <FaSquareGithub size={36} />
+              </a>
             </div>
             <div className="flex justify-center items-center p-6 rounded-full bg-base-100 shadow-2xl">
-              <FaFacebookSquare size={36} />
+              <a href="https://www.facebook.com/rjspyk2" target="_blank">
+                {" "}
+                <FaFacebookSquare size={36} />
+              </a>
             </div>
           </div>
         </div>
