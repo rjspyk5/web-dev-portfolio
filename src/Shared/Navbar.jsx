@@ -4,47 +4,46 @@ export const Navbar = () => {
   const menu = (
     <>
       <li>
-        <Link
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-green-500 font-bold" : "font-bold"
+          }
           to="/"
         >
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        {" "}
-        <Link
+        <a
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#about"
+          href="#about"
         >
           About
-        </Link>
+        </a>
       </li>
       <li>
-        {" "}
-        <Link
+        <a
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#skill"
+          href="#skills"
         >
           Skill
-        </Link>
+        </a>
       </li>
       <li>
-        {" "}
-        <Link
+        <a
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#project"
+          href="#projects"
         >
           Project
-        </Link>
+        </a>
       </li>
       <li>
-        <Link
+        <a
           className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#contact"
+          href="#contact"
         >
           Contact
-        </Link>
+        </a>
       </li>
       <li>
         <Link

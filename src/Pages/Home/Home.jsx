@@ -7,15 +7,15 @@ export const Home = () => {
   return (
     <div>
       <Banner />
-      <div id="#skills">
+      <div id="skills">
         <SectionHeading heading="Skills" />
         <SkillSection />
       </div>
-      <div id="#projects">
+      <div id="projects">
         <SectionHeading heading="Projects" />
         <ProjectSection />
       </div>
-      <div id="#contact">
+      <div id="contact">
         <SectionHeading heading="Contact Info" />
         <Contact />
       </div>

@@ -1,11 +1,11 @@
 import React from "react";
 
-export const ProjectCard = () => {
+export const ProjectCard = ({ img }) => {
   return (
     <div>
       <div className="card card-compact bg-base-100  shadow-xl">
         <figure>
-          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" />
+          <img className="max-h-[500px] w-full" src={img} />
         </figure>
         <div className="card-body">
           <h2 className="card-title">Shoes!</h2>
