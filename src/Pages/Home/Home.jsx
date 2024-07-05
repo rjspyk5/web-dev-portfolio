@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <div className="md:mx-[10%] mx-[5%]">
       <Banner />
-      <div id="skills">
+      <div id="education">
         <SectionHeading heading="Education" />
         <Education />
       </div>
