@@ -6,7 +6,11 @@ export const Root = () => {
   return (
     <div>
       <Navbar />
-      <Outlet />
+      <div className="md:mx-[10%] mx-[5%]">
+        {" "}
+        <Outlet />
+      </div>
+
       <Footer />
     </div>
   );

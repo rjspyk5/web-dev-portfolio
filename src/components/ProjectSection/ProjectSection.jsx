@@ -2,10 +2,12 @@ import { ProjectCard } from "./ProjectCard";
 import p1 from "../../assets/p1.jpg";
 import p2 from "../../assets/p2.jpg";
 import p3 from "../../assets/p3.jpg";
+import { SectionHeading } from "../sectionHeading/SectionHeading";
 
 export const ProjectSection = () => {
   return (
     <div>
+      <SectionHeading heading="Projects" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <ProjectCard
           link="https://wisdom-library-1acce.web.app/"

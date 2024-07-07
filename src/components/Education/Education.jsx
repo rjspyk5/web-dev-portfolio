@@ -1,6 +1,9 @@
+import { SectionHeading } from "../sectionHeading/SectionHeading";
+
 export const Education = () => {
   return (
     <div>
+      <SectionHeading heading="Education" />
       <div className=" h-full">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>

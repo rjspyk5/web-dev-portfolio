@@ -6,7 +6,9 @@ export const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-green-500 font-bold" : "font-bold"
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "font-bold"
           }
           to="/"
         >
@@ -14,44 +16,68 @@ export const Navbar = () => {
         </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          href="#about"
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "hover:text-green-500 duration-700 transition-colors font-bold"
+          }
         >
           About
-        </a>
+        </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          href="#skills"
+        <NavLink
+          to="/skills"
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "hover:text-green-500 duration-700 transition-colors font-bold"
+          }
         >
-          Skill
-        </a>
+          {" "}
+          Skills
+        </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          href="#projects"
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "hover:text-green-500 duration-700 transition-colors font-bold"
+          }
         >
-          Project
-        </a>
+          {" "}
+          Projects
+        </NavLink>
       </li>
       <li>
-        <a
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          href="#contact"
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "hover:text-green-500 duration-700 transition-colors font-bold"
+          }
         >
+          {" "}
           Contact
-        </a>
+        </NavLink>
       </li>
       <li>
-        <Link
-          className="hover:text-green-500 duration-700 transition-colors focus:text-green-500"
-          to="#blog"
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              : "hover:text-green-500 duration-700 transition-colors font-bold"
+          }
         >
+          {" "}
           Blog
-        </Link>
+        </NavLink>
       </li>
     </>
   );

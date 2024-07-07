@@ -39,6 +39,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { IoLogoCss3 } from "react-icons/io5";
 import { BsStripe } from "react-icons/bs";
 import { GrMysql } from "react-icons/gr";
+import { SectionHeading } from "../sectionHeading/SectionHeading";
 
 export const SkillSection = () => {
   const skillIcons = [
@@ -67,10 +68,14 @@ export const SkillSection = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 md:grid-cols-6 lg:grid-cols-8">
-      {skillIcons.map((skill, idx) => (
-        <SkillIteam key={idx} icon={skill.icon} name={skill.name} />
-      ))}
-    </div>
+    <>
+      {" "}
+      <SectionHeading heading="Skills" />
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 md:grid-cols-6 lg:grid-cols-8">
+        {skillIcons.map((skill, idx) => (
+          <SkillIteam key={idx} icon={skill.icon} name={skill.name} />
+        ))}
+      </div>
+    </>
   );
 };
