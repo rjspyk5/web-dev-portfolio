@@ -13,7 +13,7 @@ export const ProjectCard = ({
     <div>
       <div className="card card-compact bg-base-100  shadow-xl">
         <figure>
-          <img className="max-h-[500px] w-full" src={img} />
+          <img className="max-h-[250px] w-full" src={img} />
         </figure>
         <div className="card-body">
           <h1 className="font-bold text-xl">{name}</h1>
