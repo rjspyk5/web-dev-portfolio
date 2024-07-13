@@ -2,7 +2,7 @@ import profile from "../../assets/profile1.jpg";
 import { Typewriter } from "react-simple-typewriter";
 export const Banner = () => {
   return (
-    <div className="flex shadow-xl rounded-md flex-col md:flex-row justify-between p-10 my-5">
+    <div className="flex shadow-xl border  rounded-md flex-col md:flex-row justify-between p-10 my-5">
       <div className="md:w-2/5 flex justify-center items-center ">
         <img
           className="max-h-96 duration-300 transition-all ease-linear outline outline-2 outline-transparent hover:outline-green-500 rounded-md  hover:shadow-lg hover:shadow-green-500 "
