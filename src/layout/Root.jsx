@@ -8,7 +8,6 @@ export const Root = () => {
     <div>
       <Navbar />
       <div className="md:mx-[10%] mx-[5%]">
-        {" "}
         <BackToTop />
         <Outlet />
       </div>

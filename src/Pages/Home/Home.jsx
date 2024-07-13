@@ -9,11 +9,8 @@ export const Home = () => {
   return (
     <div>
       <Banner />
-
       <Education />
-
       <SkillSection />
-
       <ProjectSection />
       <AboutTab />
 
