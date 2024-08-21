@@ -41,7 +41,7 @@ export const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © ${new Date().getFullYear()} - All right reserved by
+            Copyright © {new Date().getFullYear()} - All right reserved by
             Rakibul Islam
           </p>
         </aside>
