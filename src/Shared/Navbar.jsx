@@ -82,7 +82,7 @@ export const Navbar = () => {
     </>
   );
   return (
-    <div className="sticky top-0 z-20 backdrop-blur-md md:px-[10%] px-[5%]">
+    <div className="sticky top-0 z-20 backdrop-blur-2xl md:px-[10%] px-[5%]">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
