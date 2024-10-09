@@ -100,7 +100,7 @@ export const Contact = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button className="btn text-white bg-[green]">Send</button>
               </div>
             </form>
           </div>
