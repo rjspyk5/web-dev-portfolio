@@ -117,7 +117,7 @@ export const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
         <div className="navbar-end">
-          <button className="rounded-md bg-lime-500 font-semibold text-white px-3 py-2 ">
+          <button className="rounded-md bg-[#10596c] font-semibold text-white px-3 py-2 ">
             Hire me
           </button>
         </div>
