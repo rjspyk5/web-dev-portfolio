@@ -17,9 +17,9 @@ export const Banner = () => {
         <span className={`text-4xl text-[${buttonBg}] font-bold`}>
           <Typewriter
             words={[
-              "MERN Stack Devloper",
-              "Web Devloper",
-              "React Devloper",
+              "MERN Stack Developer",
+              "Web Developer",
+              "React Developer",
               "Web Designer",
             ]}
             loop={false}
@@ -31,9 +31,9 @@ export const Banner = () => {
           />
         </span>
         <p className="text-lg">
-          I’m a Freelance UI/UX Designer and Developer based in London, England.
-          I strives to build immersive and beautiful web applications through
-          carefully crafted code and user-centric design.
+          I’m a Freelance Web Developer based in Dhaka, Bangladesh. I strives to
+          build immersive and beautiful web applications through carefully
+          crafted code and user-centric design.
         </p>
         <div className="flex gap-4">
           <button className={`btn bg-[${buttonBg}] text-white`}>
