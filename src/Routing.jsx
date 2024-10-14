@@ -6,6 +6,8 @@ import { SkillSection } from "./components/SkillSection/SkillSection";
 import { ProjectSection } from "./components/ProjectSection/ProjectSection";
 import { About } from "./Pages/About/About";
 import { Blog } from "./Pages/Blog/Blog";
+import { AdminHome } from "./Pages/Admin/AdminHome";
+import { AdminRoute } from "./AdminRoute/AdminRoute";
 
 export const Routing = createBrowserRouter([
   {
@@ -13,9 +15,10 @@ export const Routing = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
+
       {
         path: "/contact",
         element: <Contact />,
@@ -37,5 +40,13 @@ export const Routing = createBrowserRouter([
         element: <Blog />,
       },
     ],
+  },
+  {
+    path: "/admin",
+    element: (
+      <AdminRoute>
+        <AdminHome />
+      </AdminRoute>
+    ),
   },
 ]);

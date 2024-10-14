@@ -5,9 +5,9 @@ import { Outlet } from "react-router-dom";
 
 export const Root = () => {
   return (
-    <div>
+    <div className="bg-[#040414]">
       <Navbar />
-      <div className="md:mx-[10%] mx-[5%]">
+      <div className="md:mx-[10%] mx-[5%] ">
         {/* <BackToTop /> */}
         <Outlet />
       </div>
