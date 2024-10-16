@@ -7,7 +7,7 @@ export const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
               : "font-bold"
           }
           to="/"
@@ -20,8 +20,8 @@ export const Navbar = () => {
           to="/about"
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
-              : "hover:text-green-500 duration-700 transition-colors font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
+              : "hover:text-primary duration-700 transition-colors font-bold"
           }
         >
           About
@@ -32,8 +32,8 @@ export const Navbar = () => {
           to="/skills"
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
-              : "hover:text-green-500 duration-700 transition-colors font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
+              : "hover:text-primary duration-700 transition-colors font-bold"
           }
         >
           {" "}
@@ -45,8 +45,8 @@ export const Navbar = () => {
           to="/projects"
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
-              : "hover:text-green-500 duration-700 transition-colors font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
+              : "hover:text-primary duration-700 transition-colors font-bold"
           }
         >
           {" "}
@@ -58,8 +58,8 @@ export const Navbar = () => {
           to="/contact"
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
-              : "hover:text-green-500 duration-700 transition-colors font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
+              : "hover:text-primary duration-700 transition-colors font-bold"
           }
         >
           {" "}
@@ -71,8 +71,8 @@ export const Navbar = () => {
           to="/blog"
           className={({ isActive }) =>
             isActive
-              ? "text-green-500 duration-700 transition-colors focus:text-green-500 font-bold"
-              : "hover:text-green-500 duration-700 transition-colors font-bold"
+              ? "text-primary duration-700 transition-colors focus:text-primary font-bold"
+              : "hover:text-primary duration-700 transition-colors font-bold"
           }
         >
           {" "}
@@ -117,7 +117,7 @@ export const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
         <div className="navbar-end">
-          <button className="rounded-md bg-[#10596c] font-semibold text-white px-3 py-2 ">
+          <button className="rounded-md bg-primary font-semibold text-white px-3 py-2 ">
             Hire me
           </button>
         </div>

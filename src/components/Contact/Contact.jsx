@@ -100,7 +100,7 @@ export const Contact = () => {
               </div>
 
               <div className="form-control mt-6">
-                <button className="btn text-white bg-[#10596c]">Send</button>
+                <button className="btn text-white bg-primary">Send</button>
               </div>
             </form>
           </div>

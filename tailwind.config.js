@@ -4,9 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#10596c",
+        primary: "#0C8086",
       },
     },
+  },
+  daisyui: {
+    themes: ["lemonade", "night", "sunset"],
   },
   plugins: [require("daisyui")],
 };

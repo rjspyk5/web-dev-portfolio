@@ -1,5 +1,10 @@
 import React from "react";
+import { SectionHeading } from "./../../components/sectionHeading/SectionHeading";
 
 export const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <SectionHeading heading="About" />
+    </div>
+  );
 };

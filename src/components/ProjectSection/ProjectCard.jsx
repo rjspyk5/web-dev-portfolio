@@ -20,21 +20,21 @@ export const ProjectCard = ({
           <p>{descreption}</p>
           <div className="flex gap-3">
             <Link
-              className="btn bg-green-500 text-white"
+              className="btn bg-primary text-white"
               to={link}
               target="_blank"
             >
               Live
             </Link>
             <Link
-              className="btn bg-green-500 text-white"
+              className="btn bg-primary text-white"
               to={client}
               target="_blank"
             >
               Client
             </Link>
             <Link
-              className="btn bg-green-500 text-white"
+              className="btn bg-primary text-white"
               to={server}
               target="_blank"
             >
