@@ -8,13 +8,15 @@ export const About = () => {
       <SectionHeading heading="About" />
       <div className="flex gap-10">
         <div className="md:w-4/6 flex space-y-5 flex-col ">
-          <h1 className="text-2xl font-bold">Who Am I?</h1>
+          <div>
+            <h1 className="text-2xl font-bold mb-5">Who Am I?</h1>
+            <p className="text-lg">
+              I’m a Freelance Web Developer based in Dhaka, Bangladesh. I
+              strives to build immersive and beautiful web applications through
+              carefully crafted code and user-centric design.
+            </p>
+          </div>
 
-          <p className="text-lg">
-            I’m a Freelance Web Developer based in Dhaka, Bangladesh. I strives
-            to build immersive and beautiful web applications through carefully
-            crafted code and user-centric design.
-          </p>
           <div className="flex space-y-5 flex-col ">
             <h1 className="text-2xl font-bold">Personal Info</h1>
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-3">
@@ -100,6 +102,7 @@ export const About = () => {
               </div>
             </div>
           </div>
+          <div className="btn">More About Info</div>
         </div>
         <div className="md:w-2/6">
           {" "}

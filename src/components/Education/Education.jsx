@@ -23,7 +23,7 @@ export const Education = () => {
             </div>
             <div
               data-aos="fade-right"
-              className="timeline-start mb-10 md:text-end"
+              className="timeline-start mb-10 md:text-end border w-full p-3 rounded shadow"
             >
               <time className="font-mono italic">2016-2020</time>
               <div className="text-lg font-black"> BSS in Economics</div>
