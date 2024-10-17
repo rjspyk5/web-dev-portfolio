@@ -1,0 +1,14 @@
+#t {
+    position: relative;
+
+}
+#t::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 90%;
+    width: 4px;
+    background: white;
+}
