@@ -69,7 +69,7 @@ export const Timeline = () => {
           </h4>
           <h6 className="text-sm">
             Result: 2.88{" "}
-            <span className="font-normal text-xs">(out of 4.00)</span>
+            <span className="font-normal  text-xs">(out of 4.00)</span>
           </h6>
           <time className="font-mono italic">2016-2020</time>
         </VerticalTimelineElement>

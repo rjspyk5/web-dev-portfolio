@@ -1,0 +1,6 @@
+.text-3d {
+    text-shadow: 3px 3px 0 #ffffff, /* White shadow */
+                 6px 6px 0 #7f8c8d; /* Light gray shadow */
+    transform: translateZ(30px); /* Simulate depth */
+    perspective: 500px;
+  }

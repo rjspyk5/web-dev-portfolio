@@ -5,7 +5,7 @@ import { SectionHeading } from "./../../components/sectionHeading/SectionHeading
 export const About = () => {
   return (
     <div>
-      <SectionHeading heading="About" />
+      <SectionHeading heading="About Me" />
       <div className="flex gap-10">
         <div className="md:w-4/6 flex space-y-5 flex-col ">
           <div>
