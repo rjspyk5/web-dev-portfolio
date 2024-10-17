@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export const Banner = () => {
   return (
-    <div className="flex shadow-xl   rounded-md flex-col md:flex-row justify-around p-10 my-5">
+    <div className="flex shadow-2xl shadow-[#070508fc]  rounded-md flex-col md:flex-row justify-around p-10 my-5">
       <div className="md:w-2/5 flex ">
         <img
           className={`max-h-96 duration-300 transition-all shadow-[0px_0px_30px_15px_rgba(0,150,255,0.6)]  ease-linear outline outline-2 outline-transparent  rounded-md  hover:shadow-lg hover:shadow-primary `}

@@ -1,10 +1,12 @@
 import { SectionHeading } from "../sectionHeading/SectionHeading";
+import { Timeline } from "../Timeline/Timeline";
 
 export const Education = () => {
   return (
     <div>
       <SectionHeading heading="Education" />
-      <div className=" h-full">
+      <Timeline />
+      {/* <div className=" h-full">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle ">
@@ -97,7 +99,7 @@ export const Education = () => {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

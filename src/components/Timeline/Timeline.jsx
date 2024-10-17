@@ -5,102 +5,105 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "./Timeline.css";
-
 export const Timeline = () => {
   return (
     <div>
-      <VerticalTimeline id="t">
+      <VerticalTimeline id="t " layout="1-column-left">
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaUpwork />}
+          className="vertical-timeline-element--education "
+          contentStyle={{
+            background: "#0F0715", // Solid dark background color
+            color: "#fff", // White text for contrast
+            borderBottom: "1px solid white",
+
+            borderRadius: "8px", // Rounded corners
+            boxShadow: "-9px 0 50px -12px rgb(59 54 66 / 75%)", // Stronger shadow for depth
+          }}
+          contentArrowStyle={{
+            borderRight: "13px solid #0F0715",
+          }}
+          iconStyle={{
+            background: "#0F0715", // Bright red icon background for contrast
+            color: "#fff", // White icon color
+            boxShadow: "0 0 15px rgba(107 107 107 / 70%)", // Subtle glow around the icon
+          }}
+          icon={<FaSchoolCircleExclamation />} // Example icon
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaUpwork />}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2008 - 2010"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaUpwork />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2006 - 2008"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<FaUpwork />}
-        >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="April 2013"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaSchoolCircleExclamation />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
+          <h3 className="vertical-timeline-element-title text-lg font-black">
+            BSS in Economics
           </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-          <p>Strategy, Social Media</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="November 2012"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaSchoolCircleExclamation />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2002 - 2006"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<FaSchoolCircleExclamation />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
+          <h4 className="vertical-timeline-element-subtitle font-semibold">
+            National University
           </h4>
-          <p>Creative Direction, Visual Design</p>
+          <h6 className="text-sm">
+            Result: 2.88{" "}
+            <span className="font-normal text-xs">(out of 4.00)</span>
+          </h6>
+          <time className="font-mono italic">2016-2020</time>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education "
+          contentStyle={{
+            background: "#0F0715", // Solid dark background color
+            color: "#fff", // White text for contrast
+            borderBottom: "1px solid white",
+
+            borderRadius: "8px", // Rounded corners
+            boxShadow: "-9px 0 50px -12px rgb(59 54 66 / 75%)", // Stronger shadow for depth
+          }}
+          contentArrowStyle={{
+            borderRight: "13px solid #0F0715",
+          }}
+          iconStyle={{
+            background: "#0F0715", // Bright red icon background for contrast
+            color: "#fff", // White icon color
+            boxShadow: "0 0 15px rgba(107 107 107 / 70%)", // Subtle glow around the icon
+          }}
+          icon={<FaSchoolCircleExclamation />} // Example icon
+        >
+          <h3 className="vertical-timeline-element-title text-lg font-black">
+            BSS in Economics
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle font-semibold">
+            National University
+          </h4>
+          <h6 className="text-sm">
+            Result: 2.88{" "}
+            <span className="font-normal text-xs">(out of 4.00)</span>
+          </h6>
+          <time className="font-mono italic">2016-2020</time>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education "
+          contentStyle={{
+            background: "#0F0715", // Solid dark background color
+            color: "#fff", // White text for contrast
+            borderBottom: "1px solid white",
+
+            borderRadius: "8px", // Rounded corners
+            boxShadow: "-9px 0 50px -12px rgb(59 54 66 / 75%)", // Stronger shadow for depth
+          }}
+          contentArrowStyle={{
+            borderRight: "13px solid #0F0715",
+          }}
+          iconStyle={{
+            background: "#0F0715", // Bright red icon background for contrast
+            color: "#fff", // White icon color
+            boxShadow: "0 0 15px rgba(107 107 107 / 70%)", // Subtle glow around the icon
+          }}
+          icon={<FaSchoolCircleExclamation />} // Example icon
+        >
+          <h3 className="vertical-timeline-element-title text-lg font-black">
+            BSS in Economics
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle font-semibold">
+            National University
+          </h4>
+          <h6 className="text-sm">
+            Result: 2.88{" "}
+            <span className="font-normal text-xs">(out of 4.00)</span>
+          </h6>
+          <time className="font-mono italic">2016-2020</time>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>

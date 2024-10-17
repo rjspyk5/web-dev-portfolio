@@ -1,14 +1,9 @@
-#t {
-    position: relative;
 
+.vertical-timeline::before {
+    height: 69% !important; /* Set the desired height */
+    background-color: #d8d0de; /* Just for visibility, optional */
+    top: 32px; /* Ensure it aligns from the top */
+    box-shadow: 0 0 15px rgba(107 107 107 / 70%);
 }
-#t::before {
 
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 18px;
-    height: 90%;
-    width: 4px;
-    background: white;
-}
+
