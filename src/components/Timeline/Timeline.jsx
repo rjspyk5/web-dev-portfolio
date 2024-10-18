@@ -11,7 +11,7 @@ import { LuSchool2 } from "react-icons/lu";
 export const Timeline = () => {
   return (
     <div>
-      <VerticalTimeline id="t " layout="1-column-left">
+      <VerticalTimeline id="t ">
         <VerticalTimelineElement
           className="vertical-timeline-element--education "
           contentStyle={{
