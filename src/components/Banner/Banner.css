@@ -4,3 +4,37 @@
     transform: translateZ(30px); /* Simulate depth */
     perspective: 500px;
   }
+
+
+
+  @keyframes hand {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-40deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-40deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .hand {
+    display: inline-block;
+    animation: hand 1.5s ease-in-out infinite;
+    transform-origin: 55% 80%; /* Adjusting pivot point */
+  }
+
+  @keyframes hand2 {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(20deg); }
+    40% { transform: rotate(0deg); }
+    60% { transform: rotate(20deg); }
+    80% { transform: rotate(0deg); }
+    100% { transform: rotate(20deg); }
+  }
+  
+  .hand2 {
+    display: inline-block;
+    animation: hand2 1.5s ease-in-out infinite;
+    transform-origin: 70% 70%; /* Adjust origin to make it rotate naturally */
+  }
+  
+
+  

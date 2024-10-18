@@ -1,7 +1,7 @@
 
 .vertical-timeline::before {
     height: 69% !important; /* Set the desired height */
-    background-color: #d8d0de; /* Just for visibility, optional */
+    background-color: #1E69FF; /* Just for visibility, optional */
     top: 32px; /* Ensure it aligns from the top */
     box-shadow: 0 0 15px rgba(107 107 107 / 70%);
 }

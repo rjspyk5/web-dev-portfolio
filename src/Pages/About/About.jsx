@@ -19,7 +19,7 @@ export const About = () => {
 
           <div className="flex space-y-5 flex-col ">
             <h1 className="text-2xl font-bold">Personal Info</h1>
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-3">
+            <div className="grid lg:grid-cols-2 grid-cols-1 gap-3 mb-5">
               <div className="flex items-center gap-2">
                 <div>
                   <svg
@@ -102,7 +102,9 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="btn">More About Info</div>
+          <button className="btn bg-primary inline w-44 ">
+            More About Info
+          </button>
         </div>
         <div className="md:w-2/6">
           {" "}

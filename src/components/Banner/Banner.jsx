@@ -1,6 +1,7 @@
 import profile from "../../assets/profile1.jpg";
 import { Typewriter } from "react-simple-typewriter";
 import "./Banner.css";
+import { MdFrontHand } from "react-icons/md";
 
 export const Banner = () => {
   return (
@@ -12,13 +13,23 @@ export const Banner = () => {
         />
       </div>
       <div className="md:w-3/5 flex space-y-5 flex-col justify-center">
-        <h1 className="text-2xl">Hi There</h1>
-        <h1 className="text-5xl font-bold bg-clip-text text-3d text-transparent bg-gradient-to-r from-[#45165b] to-[#021b3e]">
-          I'm Rakibul Islam
+        <h1 className="text-2xl">
+          {" "}
+          Hi there{" "}
+          <span className="hand ml-3 text-[white]">
+            <MdFrontHand />
+          </span>
+          {/* <span className="hand2">👋</span> */}
+        </h1>
+        <h1 className="text-5xl font-bold flex items-center ">
+          I'm{" "}
+          <span className="bg-clip-text pl-2 pr-2 text-transparent bg-gradient-to-l  from-[#ffffff] to-[#1e69ff]">
+            Rakibul Islam
+          </span>
         </h1>
         <span
           style={{
-            textShadow: `0 0 2px rgba(0,150,255,0.6), 0 0 5px rgba(0,150,255,0.6), 0 0 8px rgba(0,150,255,0.6), 0 0 10px #0515f7, 0 0 20px rgba(0,150,255,0.6)`,
+            textShadow: `0 0 2px rgba(0,150,255,0.6), 0 0 5px rgba(0,150,255,0.6), 0 0 8px rgba(0,150,255,0.6), 0 0 10px #0515f7, 0 0 20px #1e69ff`,
           }}
           className={`text-4xl  font-bold `}
         >
