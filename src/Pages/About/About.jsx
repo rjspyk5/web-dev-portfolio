@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <div>
       <SectionHeading heading="About Me" />
-      <div className="flex gap-10">
+      <div className="flex flex-col-reverse md:flex-row gap-10">
         <div className="md:w-4/6 flex space-y-5 flex-col ">
           <div>
             <h1 className="text-2xl font-bold mb-5">Who Am I?</h1>
@@ -106,7 +106,7 @@ export const About = () => {
             More About Info
           </button>
         </div>
-        <div className="md:w-2/6">
+        <div className="md:w-2/6 flex justify-center items-center">
           {" "}
           <img
             className={`max-h-96 duration-300 transition-all shadow-[0px_0px_30px_15px_rgba(0,150,255,0.6)]  ease-linear outline outline-2 outline-transparent  rounded-md  hover:shadow-lg hover:shadow-primary `}
